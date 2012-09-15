@@ -1,6 +1,14 @@
 LibeTech QR Code-Based Entry System
 ===================================
+This Repo contains the embedded BeagleBone code.  Find the Website code in this repo: https://github.com/sciguy14/LibeTech-QR-WebSystem  
+  
 The LibeTech QR-Code Based Entry system is a unique way to do away with traditional keys and swipe cards.  Using a simple web interface, approved users are added to the system via their email addresses.  Once added, these users are sent a QR code via Email, that when held up to the system, allows them to unlock the door.
+
+Notes on the Embedded Code in this Repo
+---------------------------------------
+* I have already taken care of cross-compiling ZBar for the beaglebone platform.  It is in the zbar directory and should be ready to run when put on your beaglebone.  Learn more about zbar here: http://zbar.sourceforge.net.  I'm using it to decode the QR Codes.
+* To run this, make sure python is installed, and execute "python entry.py"
+* You will need to edit entry.py to look for the valid.txt file on your own webserver
 
 How it Works (Demo)
 -------------------
@@ -12,10 +20,6 @@ How it Works (Demo)
 * If hash is a match, door is opened
 * If not, door remains locked
 * QR code remains valid until new user signs up, and old code is invalidated
-
-Making it yourself
-------------------
-More info on this coming soon.
 
 The Team
 --------
