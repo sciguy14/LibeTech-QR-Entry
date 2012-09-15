@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/WAZI/beagle-compile/bin/zbarcam --raw --nodisplay >> tmp.txt
+/LibeTech-QR-Entry/zbar/bin/zbarcam --raw --nodisplay >> tmp.txt
